@@ -6,4 +6,8 @@ $(document).ready(function(){
     $("#Button1").click(function(){
         alert("I am JavaScript!");
     });
+
+    $("#Button2").click(function(){
+        showModal("Form1.html")
+    });
 });
