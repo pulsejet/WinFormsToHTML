@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head>
+<title>Form1</title>
+<meta charset="UTF-8">
+<meta class="modaldim" height="349px" width="483px">
+<script src="jquery.min.js"></script>
+<script src="common.js"></script>
+<script src="Form1map.js"></script>
+<script src="Form1.js"></script>
+<link rel="stylesheet" href="formstyle1.css">
+</head><body>
+ <div class= "dropdowncontainer">
+ <div Class="dropdown">
+<button id="FileToolStripMenuItem" Class="dropbtn">File</button>
+<div Class="dropdown-content">
+<a href="#" id="DemoToolStripMenuItem">Demo</a>
+<a href="#" id="ExitToolStripMenuItem">Exit</a>
+<a href="#" id="HTMLToolStripMenuItem">HTML!</a>
+</div>
+</div>
+ <div Class="dropdown">
+<button id="EditToolStripMenuItem" Class="dropbtn">Edit</button>
+<div Class="dropdown-content">
+<a href="#" id="MoreDemoToolStripMenuItem">MoreDemo</a>
+</div>
+</div>
+</div>
+<div id="mainform">
+<div class="tab" style="top:31px; left:16px;height:254px; width:446px;font-size:8.2pt;z-index:5000;">
+<button class="tablinks" onclick="openTab(event, 'TabPage1')">TabPage1</button>
+<button class="tablinks" onclick="openTab(event, 'TabPage2')">TabPage2</button>
+<div class="tabcontent" id="TabPage1" style="top:23px; left:4px;height:226px; width:437px;font-size:8.2pt;z-index:5000;">
+<button id="Button1" name="Button1" style="top:32px; left:23px;height:47px; width:93px;font-size:8.2pt;z-index:5000;" tabindex="45001">Button1</button>
+<div class="borderbox" id="GroupBox1" style="top:94px; left:27px;height:130px; width:225px;font-size:8.2pt;z-index:4999;"><legend>GroupBox1</legend>
+<div style="top:23px; left:43px;height:18px; width:86px;font-size:8.2pt;z-index:5000;">
+<input type="checkbox" style="position:relative" tabindex="4500409" id="CheckBox1" name="CheckBox1"  >&nbsp;CheckBox1</div>
+<textarea id="TextBox2" style="top:66px; left:43px;height:51px; width:125px;font-size:8.2pt;z-index:4999;" tabindex="4500408"></textarea>
+<input type="text" id="TextBox1" style="top:45px; left:43px;height:21px; width:125px;font-size:8.2pt;z-index:4998;" tabindex="4500407" >
+</div>
+<button id="Button2" name="Button2" style="top:32px; left:148px;height:47px; width:102px;font-size:8.2pt;z-index:4998;" tabindex="45003">Button2</button>
+<div id="Label1" style="top:6px; left:23px;white-space:nowrap;font-size:8.2pt;z-index:4997;">Label1</div>
+<input type="text" id="ComboBox1" list="ComboBox1List" style="top:60px; left:275px;height:22px; width:118px;font-size:8.2pt;z-index:4996;" tabindex="45004"/>
+<datalist id="ComboBox1List">
+<option value = "CB1">CB1</option>
+<option value = "CB2">CB2</option>
+<option value = "CB3">CB3</option>
+</datalist>
+<select type="list" id="ListBox1" list="ListBox1List" style="top:102px; left:275px;height:101px; width:117px;font-size:8.2pt;z-index:4995;" tabindex="45005" size="2">
+<option value = "LIST1">LIST1</option>
+<option value = "LIST2">LIST2</option>
+<option value = "LIST3">LIST3</option>
+</select>
+</div>
+<div class="tabcontent" id="TabPage2" style="top:23px; left:4px;height:226px; width:437px;font-size:8.2pt;z-index:4999;">
+<table class="tablepanel" id="TableLayoutPanel1" style="top:26px; left:35px;height:183px; width:249px;font-size:8.2pt;z-index:5000;"><legend></legend>
+<tr>
+<td>
+<button id="Button3" name="Button3" style="top:2px; left:2px;height:86px; width:119px;font-size:8.2pt;z-index:4997;" tabindex="4505051">Button3</button>
+</td>
+<td>
+<button id="Button4" name="Button4" style="top:2px; left:127px;height:86px; width:119px;font-size:8.2pt;z-index:4998;" tabindex="4505052">Button4</button>
+</td>
+</tr>
+<tr>
+<td>
+<button id="Button5" name="Button5" style="top:94px; left:2px;height:86px; width:119px;font-size:8.2pt;z-index:4999;" tabindex="4505053">Button5</button>
+</td>
+<td>
+<button id="Button6" name="Button6" style="top:94px; left:127px;height:86px; width:119px;font-size:8.2pt;z-index:5000;" tabindex="4505054">Button6</button>
+</td>
+</tr>
+</table>
+<div id="Label2" style="top:64px; left:315px;white-space:nowrap;font-size:8.2pt;z-index:4999;">Label2</div>
+</div>
+</div>
+</div>
+</body></html>

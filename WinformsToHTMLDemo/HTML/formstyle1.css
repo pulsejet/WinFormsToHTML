@@ -1,0 +1,263 @@
+body {
+    font-family:Tahoma;
+}
+
+input, img, textarea, button, table, div, select {position:absolute;}
+
+#mainform {
+    top:0; left:0;
+}
+
+textarea {resize: none;}
+
+.hidden {
+    display:none;
+}
+
+div.dropdown, div.dropdown-content, .dropbtn {
+    position:relative;
+}
+
+table {
+    border-spacing:0;
+}
+
+.add, table .delete, th {
+    cursor: pointer;
+}
+
+.tablecontainer1, .tablecontainer2 {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color:silver;
+    border: 1px solid gray;
+}
+
+.tablecontainer2 {
+    overflow: auto;
+}
+
+.tabledatagrid1, .tabledatagrid2 {
+    font-size:inherit;
+    background-color:white;
+}
+
+.tabledatagrid1 {
+    table-layout:fixed;
+    width:100%;
+    cursor:pointer;
+}
+
+.tabledatagrid2 {
+    table-layout:auto;
+    white-space:nowrap;
+}
+
+.tabledatagrid1 tr:nth-child(odd), .tabledatagrid2 tr:nth-child(odd) {
+    background-color: #f2f2f2
+}
+
+.tabledatagrid1 tr:hover, .tabledatagrid2 tr:hover {
+    background-color: beige;
+}
+
+.tabledatagrid1 td, .tabledatagrid2 td, .tabledatagrid1 th, .tabledatagrid2 th {
+    text-align: center;
+    height:20px;
+    overflow:hidden;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-right: 1px solid silver;
+}
+
+.tabledatagrid1 th, .tabledatagrid2 th {
+    border-bottom: 1px solid silver;
+    background-color:white;
+}
+
+.tabledatagrid2 td, .tabledatagrid2 th {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+table thead tr .headerSortDown, table thead tr .headerSortUp {
+    background-color: silver;
+}
+
+button {
+    border: 1px solid gray;
+}
+
+.borderbox {
+    border: 1px solid silver;
+}
+.borderbox legend{
+    color:gray;
+}
+
+button:not([disabled]):hover {
+    cursor:pointer;
+}
+
+button:focus {
+    background-color:#ffc5ca;
+}
+
+input {
+    border: 1px solid grey;
+}
+
+input:focus, textarea:focus {
+    background-color: #b9f6ca;
+}
+
+.sneaky_hidden {
+    position:absolute; 
+    right:0; 
+    top:0; 
+    width:0; 
+    height:0; 
+    border:0; 
+    padding:0;
+}
+
+/*========== DROPDOWN ==============================================*/
+
+.dropdowncontainer {
+    position:absolute; z-index:10000;  top:0; left:0; width:100%;
+    display:inline;
+    //border-bottom: 1px solid black;
+}
+.dropdown {
+    float:left;
+    display:inline;
+    position:relative;
+}
+
+.dropbtn {
+    padding: 3px;
+    font-size: 12px;
+    padding-right:8px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size:12px;
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    position:absolute;
+    display: block;
+}
+
+/*============ MODAL ==============================================*/
+
+/* The Modal (background) */
+iframe {
+    width:100%;
+    height:100%;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000000; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    opacity:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: opacity 0.15s linear;
+    -webkit-transition: opacity 0.15s linear;
+}
+
+/* Modal Content */
+.modal-content {
+    position:relative;
+    background-color: #fefefe;
+    height:90%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    opacity: 0;
+    transition: width 0.15s, height 0.15s, opacity 0.15s linear;
+    -webkit-transition: width 0.15s, height 0.15s, opacity 0.15s linear;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    position:absolute;
+    top:0;right:5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ================ TABS =================== */
+ /* Style the tab */
+div.tab {
+    overflow: hidden;
+    position:absolute;
+    display:inline;
+    border: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+    position:relative;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: border: 1px solid #ccc;;
+} 
