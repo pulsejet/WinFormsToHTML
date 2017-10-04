@@ -1,7 +1,7 @@
 # WinFormsToHTML
 A quick converter from WinForms to HTML. The converter is written in VB.NET, but can be easily converted to C# since the two languages are equivalent.
 
-The purpose is to be able to get a head-start into converting a WinForms application to a webapp. All on form actions must be performed using JavaScript, which must be written separately. The `<form.name>map.js` file that is created is used by data based applications to store database mappings for easy access.
+This project does not serve the purpose of converting an entire WinForms application to a web application. The aim is to be able to get a head-start into converting a WinForms application to a webapp. All on form actions must be performed using JavaScript, which must be written separately. The `<form.name>map.js` file that is created is used by data based applications to store database mappings for easy access.
 
 A js script with some useful functions (`common.js`) is also provided.
 
